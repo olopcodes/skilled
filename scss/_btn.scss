@@ -1,0 +1,16 @@
+.btn {
+    all: unset;
+    cursor: pointer;
+    display: inline-block;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-weight: $fw-bold;
+    letter-spacing: 1px;
+    &--dark {
+        color: $color-white;
+        background-color: $color-dark;
+    }
+}

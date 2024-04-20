@@ -1,0 +1,28 @@
+// font
+
+
+// colors
+$color-white: #fff;
+$color-accent: #f74780;
+$color-pink: #ffa7c3;
+$color-gray: #83869a;
+$color-dark: #13183f;
+$color-slate-gray: #666ca3;
+$gradient-pink: linear-gradient(to bottom, #f02aa6, #ff6f48);
+$gradient-fancy: linear-gradient(to bottom, #4851ff, #f02aa6);
+
+// font styles
+$font-fam: "Plus Jakarta Sans", sans-serif;
+$reg-line-height: 1.75rem;
+$main-heading-font-size: clamp(2.5rem, 3.5rem, 3.5rem);
+$main-heading-line-height: clamp(3.1rem, 4.375rem, 4.375rem);
+$secondary-heading-font-size: clamp(2rem, 2.5rem, 2.5rem);
+$secondary-heading-line-height: clamp(2.5rem, 3.1rem, 3.1rem);
+$third-heading-font-size: 1.5rem;
+$font-size: 16px;
+$fw-lightest: 200;
+$fw-light: 300;
+$fw-reg: 400;
+$fw-med: 600;
+$fw-bold: 700;
+$fw-boldest: 800;

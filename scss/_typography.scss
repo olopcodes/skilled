@@ -1,0 +1,17 @@
+
+.heading {
+    &--main {
+        font-size: $main-heading-font-size;
+        line-height: $main-heading-line-height;
+    }
+
+    &--secondary {
+        font-size: $secondary-heading-font-size;
+        line-height: $secondary-heading-line-height;
+    }
+
+    &--third {
+        font-size: $third-heading-font-size;
+        line-height: $reg-line-height;
+    }
+}

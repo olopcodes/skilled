@@ -1,0 +1,21 @@
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background-color: $color-white;
+    font-size: $font-size;
+    line-height: $reg-line-height;
+    color: $color-gray;
+    font-family: $font-fam;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
