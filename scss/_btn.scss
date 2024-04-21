@@ -9,8 +9,24 @@
     font-family: inherit;
     font-weight: $fw-bold;
     letter-spacing: 1px;
+    color: $color-white;
+    transition: 300ms ease;
+
+    &:hover {
+        opacity: .85;
+    }
+
+
     &--dark {
-        color: $color-white;
         background-color: $color-dark;
+
+    }
+
+    &--pink {
+        background-image: $gradient-pink;
+    }
+
+    &--fancy {
+        background-image: $gradient-fancy;
     }
 }

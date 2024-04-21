@@ -3,6 +3,8 @@
     &--main {
         font-size: $main-heading-font-size;
         line-height: $main-heading-line-height;
+        color: $color-dark;
+        margin-bottom: 1.5rem;
     }
 
     &--secondary {
@@ -13,5 +15,19 @@
     &--third {
         font-size: $third-heading-font-size;
         line-height: $reg-line-height;
+        color: $color-dark;
+        margin: 1.5rem 0;
+    }
+}
+
+.text {
+    font-size: 1.125rem;
+    line-height: $reg-line-height;
+    margin-bottom: 1.5rem;
+
+
+    &--lead {
+        font-size: 1.35rem;
+        line-height: 2rem;
     }
 }
