@@ -131,6 +131,7 @@ textarea:not([rows]) {
 
 html, body {
   min-height: 100vh;
+  overflow: hidden;
 }
 
 body {
@@ -155,6 +156,10 @@ section {
   padding: 3rem 0;
 }
 
+.header {
+  position: relative;
+  z-index: 10000;
+}
 .header__content {
   padding: 1rem 0;
   display: flex;
@@ -162,10 +167,32 @@ section {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .banner__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+  }
+}
 .banner__text {
   margin-bottom: 3rem;
 }
-
+.banner__img-box {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .courses__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .courses__cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
 .courses__card {
   background-color: #fff;
   position: relative;
@@ -174,13 +201,17 @@ section {
   margin-bottom: 4rem;
   box-shadow: 0px 5px 10px 0px rgba(102, 108, 163, 0.1);
 }
+@media screen and (min-width: 1024px) {
+  .courses__card {
+    padding: 2rem;
+  }
+}
 .courses__card:first-child {
   background-image: linear-gradient(to bottom, #f02aa6, #ff6f48);
   color: #fff;
   box-shadow: none;
-}
-.courses__card:first-child::first-letter {
-  text-transform: capitalize;
+  display: grid;
+  place-items: center;
 }
 .courses__card img {
   position: absolute;

@@ -42,7 +42,23 @@
         </div>
 
         <div class="banner__img-box">
-          <img src="./assets/image-hero-mobile.png" alt="woman drinking and stats about the company">
+          <!-- <img src="./assets/image-hero-mobile.png" alt="woman drinking and stats about the company"> -->
+          <!-- <img src="./assets/image-hero-tablet@2x.png" alt=""> -->
+          
+          <picture>
+            <source 
+              srcset="./assets/image-hero-desktop.png"
+              media="(min-width: 1024px)"
+            />
+            <source 
+              srcset="./assets/image-hero-tablet.png"
+              media="(min-width: 768px)"
+            />
+            <img 
+              src="./assets/image-hero-mobile.png" 
+              alt="stats about the site"
+            />
+          </picture>
         </div>
       </div>
     </section>
@@ -52,7 +68,7 @@
         <div class="courses__cards">
           <div class="courses__card">
             <h2 class="heading--secondary">
-              check out our most popular courses!
+              Check out our most popular courses!
             </h2>
           </div>
 
