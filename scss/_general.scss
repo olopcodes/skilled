@@ -1,6 +1,6 @@
 html, body {
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
     line-height: $reg-line-height;
     color: $color-gray;
     font-family: $font-fam;
+    transition: background-color 300ms ease;
 }
 
 a {

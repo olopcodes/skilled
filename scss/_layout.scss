@@ -1,12 +1,24 @@
 .header {
     position: relative;
     z-index: 10000;
+    
+    .logo {
+        margin-right: auto;
+    }
+
+    .logo img {
+        width: 80px;
+
+        @include mediaq('md') {
+            width: 120px;
+        }
+    }
 
     &__content {
         padding: 1rem 0;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        gap: 1rem;
     }
     
     
@@ -14,33 +26,49 @@
 
 .banner {
     &__content {
+        display: grid;
+        place-items: center;
+
         @include mediaq('md') {
-            display: grid;
+            
             grid-template-columns: 1fr 1fr;
-            place-items: center;
         }
     }
 
     &__text {
         margin-bottom: 3rem;
-    }
+        text-align: center;
 
-    &__img-box {
-        position: relative;
+        @include mediaq('md') {
+            text-align: left;
+        }
     }
 
     &__img-box img {
-        // transform: scale(1.5);
-        // position: absolute;
-        // left: 30%;
-        // top: -8rem;
+
+        @include mediaq('md') {
+            transform: scale(1.5);
+            position: relative;
+            left: 20%;
+            top: -6rem;
+        }
+
+        @include mediaq('xl') {
+            transform: scale(1.75);
+            top: -10rem;
+            left: 40%;
+
+        }
+        
     }
 }
 
 .courses {
     &__cards {
+        display: grid;
+        grid-auto-rows: 1fr;
+
         @include mediaq('md') {
-            display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1rem;
         }

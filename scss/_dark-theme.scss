@@ -1,0 +1,23 @@
+[data-theme='dark'] {
+        background-color: $color-dark;
+
+        h1 {
+            color: $color-bg;
+        }
+
+        .btn--dark {
+            background-color: $color-bg;
+            color: $color-dark;
+        }
+
+        .btn--theme i {
+            color: $color-bg;
+        }
+
+        .footer {
+            background-color: $color-bg;
+        }
+}
+
+
+

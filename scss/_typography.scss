@@ -5,6 +5,10 @@
         line-height: $main-heading-line-height;
         color: $color-dark;
         margin-bottom: 1.5rem;
+
+        @include mediaq('lg') {
+            line-height: 5rem;
+        }
     }
 
     &--secondary {
